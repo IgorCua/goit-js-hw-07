@@ -22,9 +22,9 @@ function markup(){
     }).join('');
 }
 
-document.querySelector('.gallery').addEventListener('click', test);
+document.querySelector('.gallery').addEventListener('click', imageViewer);
 
-function test(event){
+function imageViewer(event){
     event.preventDefault();
 
     if(event.target.className !== 'gallery__image') {
