@@ -22,18 +22,7 @@ function markup(){
     }).join('');
 }
 
-document.querySelector('.gallery').addEventListener('click', test);
-
-function test(event){
-    event.preventDefault();
-
-    if(event.target.className !== 'gallery__image') {
-        return;
-    }
-    console.log(event.target)
-
-    var lightbox = new SimpleLightbox('.gallery li', {
-        captionSelector: 'img',
-        captionDelay: 250
-    });
-}
+const lightbox = new SimpleLightbox('.gallery li', {
+    captionSelector: 'img',
+    captionDelay: 250
+});
